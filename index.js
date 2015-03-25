@@ -61,7 +61,7 @@ var capitalizeWord = function(word) {
 
 var getNumbers = function() {
 
-  return '123456';
+  return Math.random().toString(10).substr(2,6);
 
 };
 
@@ -71,10 +71,6 @@ var tweeter = function(texts) {
   try {
 
     var newSentence = getNumbers();
-
-    // capitalize first word
-    // I tried inflection's "titleize" but that zapped acronyms like "SSN" and "NSA"
-    newSentence = newSentence.slice(0,1).toUpperCase() + newSentence.slice(1);
 
     console.log(newSentence);
 
