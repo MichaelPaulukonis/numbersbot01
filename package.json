@@ -4,7 +4,9 @@
   "description": "the fingerprints",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku:schedule": "heroku addons:open scheduler"
   },
   "repository": {
     "type": "git",
@@ -16,7 +18,7 @@
     "url": "https://github.com/michaelpaulukonis/numbersbot01/issues"
   },
   "engines": {
-    "node": "0.12.0"
+    "node": "8.15"
   },
   "dependencies": {
     "twit": "~1.1.9"
